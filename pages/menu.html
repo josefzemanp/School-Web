@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link href="https://fonts.cdnfonts.com/css/indie-flower" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almarai" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header_logo">
+        <img alt="logo" class="header_logo_image" src="../assets/logo.png">
+        <h1 class="header_logo_title">49. MŠ <br/> Čtyřlístek</h1>
+    </div>
+    <nav class="header_nav">
+        <div class="header_nav_hamburger"  onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a>Uvod</a></li>
+            <li><div onclick="toggleDropdown()">Skolka <span class="header_nav_dropdown_arrow"></span></div>
+                <ul class="header_nav_dropdown">
+                    <li><a>O školce</a></li>
+                    <li><a>Kontakty</a></li>
+                    <li><a>Informace</a></li>
+                    <li onclick="toggleClassDropdown()">Třídy <span class="header_nav_dropdown_arrow"></span>
+                        <ul class="header_nav_dropdown_classes">
+                            <li><a>Veverky</a></li>
+                            <li><a>Krtečci</a></li>
+                            <li><a>Medvíďata</a></li>
+                            <li><a>Včelky</a></li>
+                        </ul>
+                    </li>
+                    <li><a>3D vizualizace</a></li>
+                </ul>
+
+            </li>
+            <li><a>Jidelnicek</a></li>
+            <li><a>Fotogalerie</a></li>
+        </ul>
+        <a class="header_button">Kontaktujte nas <span class="header_button_arrow">></span></a>
+    </nav>
+</header>
+
+<main class="main">
+
+    <section class="main_menu">
+        <h1 class="sec_title menu" style="--left-title: 675px; --color-title: var(--red-color);"><span class="title_red">Co mají děti <span class="underground">dobrého k jídlu</span>?</span></h1>
+
+        <div class="main_menu_content">
+            <div class="main_menu_days">
+                <div class="main_menu_circle"></div>
+
+                <ul class="main_menu_list">
+                    <li class="main_menu_list_item" data-day="patek">Pátek</li>
+                    <li class="main_menu_list_item" data-day="ctvrtek">Čtvrtek</li>
+                    <li class="main_menu_list_item" data-day="streda">Středa</li>
+                    <li class="main_menu_list_item" data-day="utery">Úterý</li>
+                    <li class="main_menu_list_item" data-day="pondeli">Pondělí</li>
+                </ul>
+            </div>
+
+            <div class="main_menu_table">
+                <div class="main_menu_table_header">
+                    <button class="main_menu_table_header_wswitch"><span class="triangle_left"></span></button>
+
+                    <p class="main_menu_table_header_date">23.10. 2024 - 29.10. 2024</p>
+
+                    <button class="main_menu_table_header_wswitch"><span class="triangle_right"></span></button>
+                </div>
+
+                <div class="main_menu_table_body">
+                    <div class="main_menu_table_body_header">
+                        <button class="main_menu_table_header_wswitch"><span class="triangle_left"></span></button>
+
+                        <p class="main_menu_table_header_date">23.10.2024</p>
+
+                        <button class="main_menu_table_header_wswitch"><span class="triangle_right"></span></button></button>
+                    </div>
+
+                    <div class="main_menu_table_body_content">
+                        <div class="main_menu_table_body_content_block">
+                            <p class="main_menu_table_body_content_block_t"><span class="underground">Dopolední svačinka:</span> Rohlík, omazánka rozhuda, ovoce, banánové mléko, čaj</p>
+                        </div>
+
+                        <div class="main_menu_table_body_content_block">
+                            <p class="main_menu_table_body_content_block_t"><span class="underground">Polévka:</span> Pohanková se zeleninou</p>
+                            <p class="main_menu_table_body_content_block_t"><span class="underground">Oběd:</span> Zapečené filé na celeru a pórku, brambory, zelný salát</p>
+                        </div>
+
+                        <div class="main_menu_table_body_content_block">
+                            <p class="main_menu_table_body_content_block_t"><span class="underground">Odpolední svačinka:</span> Chléb šumava, pomazánka špenátová, zelenina, mléko, čaj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <section class="footer_collaboration">
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col1.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col2.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col3.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col4.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col5.png">
+        </a>
+    </section>
+
+    <section class="footer_info">
+        <p class="main_content_description_motto" style="font-size: 40px"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+        <div class="custom_underline"></div>
+
+        <div class="footer_info_blocks">
+            <div class="footer_info_block">
+                <h1 class="main_content_title"><span class="title_red">49.</span> <span class="title_blue">mateřská škola</span> <br/> <span class="title_green underground">ČTYŘLÍSTEK</span></h1>
+                <img class="main_content_arrow" src="../assets/arrow1.png" alt="arrow">
+                <a class="main_button" href="#"><span class="main_button_text">Kontaktujte nás</span> <span class="main_button_arrow">></span></a>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_block_lists">
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Ochrana osobních údajů</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Povinně zveřejňované informace</a></li>
+                    </ul>
+
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Úvod</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">O školce</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Kontakty</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Informace</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Jídelníček</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Fotogalerie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pilsen Logo -->
+    </section>
+
+</footer>
+</body>
+
+<script src="../scripts/navigation.js"></script>
+<script src="../scripts/menu.js"></script>
+
+
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link href="https://fonts.cdnfonts.com/css/indie-flower" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almarai" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header_logo">
+        <img alt="logo" class="header_logo_image" src="../assets/logo.png">
+        <h1 class="header_logo_title">49. MŠ <br/> Čtyřlístek</h1>
+    </div>
+    <nav class="header_nav">
+        <div class="header_nav_hamburger"  onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a>Uvod</a></li>
+            <li><div onclick="toggleDropdown()">Skolka <span class="header_nav_dropdown_arrow"></span></div>
+                <ul class="header_nav_dropdown">
+                    <li><a>O školce</a></li>
+                    <li><a>Kontakty</a></li>
+                    <li><a>Informace</a></li>
+                    <li onclick="toggleClassDropdown()">Třídy <span class="header_nav_dropdown_arrow"></span>
+                        <ul class="header_nav_dropdown_classes">
+                            <li><a>Veverky</a></li>
+                            <li><a>Krtečci</a></li>
+                            <li><a>Medvíďata</a></li>
+                            <li><a>Včelky</a></li>
+                        </ul>
+                    </li>
+                    <li><a>3D vizualizace</a></li>
+                </ul>
+
+            </li>
+            <li><a>Jidelnicek</a></li>
+            <li><a>Fotogalerie</a></li>
+        </ul>
+        <a class="header_button">Kontaktujte nas <span class="header_button_arrow">></span></a>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="main_contact">
+        <h1 class="sec_title main_contact" style="--left-title: 525px; --color-title: var(--yellow-color);"><span class="title_yellow">Kde nás <span class="underground">kontaktovat</span>?</span></h1>
+
+        <div class="main_contact_content">
+            <div class="main_contact_block">
+                <div class="main_contact_block_left">
+                    <div class="main_contact_block_left_top">
+                        <h2 class="main_contact_block_left_title">49. mateřská škola</h2>
+                        <p class="main_contact_block_left_address">Puškinova 5, 30100 Plzeň</p>
+                    </div>
+
+                    <div class="main_contact_block_left_middle">
+                        <p class="main_contact_block_left_phone">Tel. MŠ: <span class="underground">+420 702 267 558</span></p>
+                        <p class="main_contact_block_left_phone">Tel. školní jídelna: <span class="underground">+420 702 267 409</span></p>
+                    </div>
+
+                    <div class="main_contact_block_left_bottom">
+                        <p class="main_contact_block_left_email">E-mail: <a class="main_contact_block_left_email_link" href="mailto:kaprasovahe@ms49.plzen-edu.cz"><span class="underground">kaprasovahe@ms49.plzen-edu.cz</span></a></p>
+                    </div>
+                </div>
+
+                <div class="main_contact_block_right">
+                    <iframe style="border:none" src="https://en.frame.mapy.cz/s/bagakosuta" width="400" height="280" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="classes">
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classk.png">
+            <h2 class="classes_block_title">+420 607 029 810</h2>
+        </div>
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classv.png">
+            <h2 class="classes_block_title">+420 728 332 226</h2>
+        </div>
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classm.png">
+            <h2 class="classes_block_title">+420 702 267 465</h2>
+        </div>
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classvc.png">
+            <h2 class="classes_block_title">+420 702 267 540</h2>
+        </div>
+    </section>
+
+    <section class="form">
+        <h1 class="sec_title main_contact" style="--left-title: 475px; --color-title: var(--red-color);"><span class="title_red">Máte nějaký <span class="underground">dotaz</span>?</span></h1>
+
+        <form class="form_block">
+            <div class="form_block_sec">
+                <div class="form_block_input">
+
+                    <label class="form_block_input_label" for="name">Vaše jméno a příjmení</label>
+
+                    <div class="form_block_input_line">
+                        <p class="form_block_input_line_icon">U</p> <!-- Vlozit iconku -->
+                        <input class="form_block_input_field" id="name" type="text">
+                    </div>
+
+                </div>
+
+                <div class="form_block_input">
+
+                    <label class="form_block_input_label" for="email">Váš e-mail</label>
+
+                    <div class="form_block_input_line">
+                        <p class="form_block_input_line_icon">M</p> <!-- Vlozit iconku -->
+                        <input class="form_block_input_field" id="email" type="email">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form_block_sec">
+                <div class="form_block_input">
+
+                    <label class="form_block_input_label" for="text">Vaše zpráva</label>
+
+                    <div class="form_block_input_line text">
+                        <textarea class="form_block_input_field" id="text" style="resize: none;"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <a class="main_button" href="#"><span class="main_button_text">Kontaktovat</span> <span class="main_button_arrow">></span></a>
+
+
+        </form>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <section class="footer_collaboration">
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col1.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col2.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col3.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col4.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col5.png">
+        </a>
+    </section>
+
+    <section class="footer_info">
+        <p class="main_content_description_motto" style="font-size: 40px"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+        <div class="custom_underline"></div>
+
+        <div class="footer_info_blocks">
+            <div class="footer_info_block">
+                <h1 class="main_content_title"><span class="title_red">49.</span> <span class="title_blue">mateřská škola</span> <br/> <span class="title_green underground">ČTYŘLÍSTEK</span></h1>
+                <img class="main_content_arrow" src="../assets/arrow1.png" alt="arrow">
+                <a class="main_button" href="#"><span class="main_button_text">Kontaktujte nás</span> <span class="main_button_arrow">></span></a>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_block_lists">
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Ochrana osobních údajů</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Povinně zveřejňované informace</a></li>
+                    </ul>
+
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Úvod</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">O školce</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Kontakty</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Informace</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Jídelníček</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Fotogalerie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plzen Logo -->
+    </section>
+</footer>
+
+<script src="../scripts/navigation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+@import "./global.css";
+
+
+
+.gallery_school_photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_school_photos .gallery_school_photo{
+    margin: 20px;
+}
+
+.gallery_school_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery_school_content .main_button{
+    margin-top: 50px;
+}
+
+
+
+
+.custom_underline {
+    width: 50px;
+    height: 3px;
+    background: var(--orange-color);
+}
+
+@media only screen and (max-width: 1384px) {
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .main_content{
+        height: 400px;
+    }
+
+    .main_content .main_content_title{
+        font-size: 40px;
+    }
+
+    .main_content_description_motto{
+        font-size: 20px;
+    }
+
+    .main_content_description_text{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .positives_blocks{
+        flex-wrap: wrap;
+    }
+
+    .positives_blocks_block{
+        margin: 20px;
+    }
+
+    .main_content .main_content_title::before{
+        width: 65.03px;
+        height: 52px;
+        right: 90px;
+        top: -60px;
+    }
+
+    .main_content .main_content_title::after{
+        width: 35.53px;
+        height: 39.73px;
+        right: 80px;
+        top: 5px;
+    }
+
+    .main_content_right .main_content_image{
+        width: 100%;
+    }
+
+
+    .classes .classes_block{
+        width: 175px;
+        height: 195px;
+        display: flex;
+        padding: 5px;
+        border-radius: 25px;
+        margin-inline: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .gallery_children{
+        margin-top: 100px;
+        height: 500px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main_content{
+        flex-direction: column;
+        height: 750px;
+
+    }
+
+    .main_content .main_content_left{
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 200px;
+    }
+
+    .main_content .main_content_right{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main_content .main_content_right .main_content_image{
+        width: 75%;
+    }
+
+    .classes{
+        flex-direction: column;
+        height: 750px;
+    }
+
+    .classes::after{
+        content: '';
+        position: absolute;
+        background-image: url('../assets/classes_background2.png');
+        background-size: auto 100%;
+        background-position-y: center;
+        height: 1050px;
+        top: calc(50% - 1050px / 2);
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .classes .classes_block{
+        width: 100%;
+        margin: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .classes .classes_block:nth-child(2n){
+        transform: translateY(0);
+    }
+
+    .classes .classes_block:nth-child(odd){
+        transform: translateY(0);
+    }
+}

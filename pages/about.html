@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">e
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/about.css">
+    <link href="https://fonts.cdnfonts.com/css/indie-flower" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almarai" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header_logo">
+        <img alt="logo" class="header_logo_image" src="../assets/logo.png">
+        <h1 class="header_logo_title">49. MŠ <br/> Čtyřlístek</h1>
+    </div>
+    <nav class="header_nav">
+        <div class="header_nav_hamburger"  onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a>Uvod</a></li>
+            <li><div onclick="toggleDropdown()">Skolka <span class="header_nav_dropdown_arrow"></span></div>
+                <ul class="header_nav_dropdown">
+                    <li><a>O školce</a></li>
+                    <li><a>Kontakty</a></li>
+                    <li><a>Informace</a></li>
+                    <li onclick="toggleClassDropdown()">Třídy <span class="header_nav_dropdown_arrow"></span>
+                        <ul class="header_nav_dropdown_classes">
+                            <li><a>Veverky</a></li>
+                            <li><a>Krtečci</a></li>
+                            <li><a>Medvíďata</a></li>
+                            <li><a>Včelky</a></li>
+                        </ul>
+                    </li>
+                    <li><a>3D vizualizace</a></li>
+                </ul>
+
+            </li>
+            <li><a>Jidelnicek</a></li>
+            <li><a>Fotogalerie</a></li>
+        </ul>
+        <a class="header_button">Kontaktujte nas <span class="header_button_arrow">></span></a>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="about">
+        <h1 class="sec_title main_contact" style="--left-title: 300px; --color-title: var(--brown-color);"><span class="title_brown">Něco <span class="underground">o nás</span></span></h1>
+
+        <p class="about_text">Jsme mateřská škola umístěna v historickém centru města vedle dominantní stavby židovské
+            synagogy. <span class="underground">Naší prioritou je příprava dětí pro vstup do ZŠ</span>. Filozofií je <span class="underground">umožnit dětem šťastné aktivní dětství</span> tím, že jim s <span class="underground">celým kolektivem vytvoříme přátelské a tvořivé prostředí plné lásky, pochopení a kamarádské atmosféry</span> tak, aby se zde <span class="underground">cítily dobře, bezpečně</span> a aby se k nám děti vždy rádi vracely. Školka má celkem 4 třídy a navštěvovat ji mohou děti od 2 - 6 let. Celková kapacita naší školky je 100 dětí. Ve všech třídách jsou také integrovány děti s odlišným mateřským jazykem.</p>
+        <p class="about_motto"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+    </section>
+
+    <section class="classes">
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classk.png">
+            <h2 class="classes_block_title">Krtecci</h2>
+        </div>
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classv.png">
+            <h2 class="classes_block_title">Veverky</h2>
+        </div>
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classm.png">
+            <h2 class="classes_block_title">Medvidata</h2>
+        </div>
+        <div class="classes_block">
+            <img alt="photo" class="classes_block_image" src="../assets/classvc.png">
+            <h2 class="classes_block_title">Vcelky</h2>
+        </div>
+    </section>
+
+    <section class="news">
+        <h1 class="sec_title news" style="--left-title: 475px; --color-title: var(--yellow-color);"><span class="title_yellow">Co je u nás <span class="underground">nového</span>?</span></h1>
+
+        <div class="news_blocks">
+            <div class="news_blocks_block">
+                <p class="news_blocks_block_date">červenec 2023</p>
+                <h2 class="news_blocks_block_title">Pergola</h2>
+                <p class="news_blocks_block_description">Byla instalována pergola nad terasou 3. třídy pro mnohostranné využití dětmi a při tvořivých dílnách a aktivitách MŠ.</p>
+            </div>
+            <div class="news_blocks_block">
+                <p class="news_blocks_block_date">červenec 2023</p>
+                <h2 class="news_blocks_block_title">Pergola</h2>
+                <p class="news_blocks_block_description">Byla instalována pergola nad terasou 3. třídy pro mnohostranné využití dětmi a při tvořivých dílnách a aktivitách MŠ.</p>
+            </div>
+            <div class="news_blocks_block">
+                <p class="news_blocks_block_date">červenec 2023</p>
+                <h2 class="news_blocks_block_title">Pergola</h2>
+                <p class="news_blocks_block_description">Byla instalována pergola nad terasou 3. třídy pro mnohostranné využití dětmi a při tvořivých dílnách a aktivitách MŠ.</p>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <h1 class="sec_title team" style="--left-title: 700px; --color-title: var(--red-color);"><span class="title_red"><span class="underground">Kdo stojí</span> za dětskou radostí?</span></h1>
+
+        <div class="team_nav">
+
+            <button class="team_nav_block">
+                Vedení školky
+            </button>
+
+            <button class="team_nav_block">
+                Školka
+            </button>
+
+            <button class="team_nav_block">
+                Jídelna
+            </button>
+
+            <button class="team_nav_block">
+                Úklid a správa
+            </button>
+
+        </div>
+
+        <div class="team_section">
+            <h2 class="team_section_title">Vedení školky</h2>
+
+            <div class="team_section_blocks">
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Ing. Helena Kaprasová</h3>
+                    <p class="team_section_blocks_block_role">ředitelka</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team_section">
+            <h2 class="team_section_title">Školka</h2>
+
+            <div class="team_section_blocks">
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Monika Horčičková</h3>
+                    <p class="team_section_blocks_block_role">učitelka, zástupkyně ředitelky</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team_section">
+            <h2 class="team_section_title">Jídelna</h2>
+
+            <div class="team_section_blocks">
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Lucia Kučerková</h3>
+                    <p class="team_section_blocks_block_role">vedoucí školní jídelny</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Lucia Kučerková</h3>
+                    <p class="team_section_blocks_block_role">vedoucí školní jídelny</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Lucia Kučerková</h3>
+                    <p class="team_section_blocks_block_role">vedoucí školní jídelny</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team_section">
+            <h2 class="team_section_title">Úklid a správa</h2>
+
+            <div class="team_section_blocks">
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Renata Dlouhá</h3>
+                    <p class="team_section_blocks_block_role">školnice</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Renata Dlouhá</h3>
+                    <p class="team_section_blocks_block_role">školnice</p>
+                </div>
+
+                <div class="team_section_blocks_block">
+                    <h3 class="team_section_blocks_block_name">Renata Dlouhá</h3>
+                    <p class="team_section_blocks_block_role">školnice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="support">
+        <h1 class="sec_title support" style="--left-title: 725px; --color-title: var(--blue-color);"><span class="title_blue"><span class="underground">Kdo podporuje</span> naše úspěchy?</span></h1>
+
+        <div class="support_blocks">
+            <div class="support_blocks_block">
+                <div class="support_blocks_block_text">
+                    <h2 class="support_blocks_block_title">Odbor životního prostředí MMP</h2>
+                    <div class="custom_underline"></div>
+                    <p class="support_blocks_block_description">Osázení školní zahrady a doplnění nové zeleně, umístění mlatových chodníčků s lavičkami, nová krmítka, ptačí budky, pítka pro ptáčky, interaktivní tabule, prvek „ cesta“, vodní žulový prvek a herní prvky.</p>
+                    <p class="support_blocks_block_prize">V celkové výši: <span class="underground">699 063,60 Kč</span> ve čtyřech etapách v projektu: „ Naše rozkvetlá zahrada“</p>
+                </div>
+
+                <div class="support_blocks_block_image">
+                    <img alt="image" class="support_blocks_block_image" src="../assets/support1.png">
+                </div>
+            </div>
+
+            <div class="support_blocks_block">
+                <div class="support_blocks_block_image">
+                    <img alt="image" class="support_blocks_block_image" src="../assets/support2.png">
+                </div>
+
+                <div class="support_blocks_block_text">
+                    <h2 class="support_blocks_block_title">Nadace ČEZ</h2>
+                    <div class="custom_underline"></div>
+                    <p class="support_blocks_block_description">Na Herní prvek Hrad bylo přispěno v říjnu 2019 - Podpora regionů v projektu ,,Interaktivní herní prvek pro děti".</p>
+                    <p class="support_blocks_block_prize">V celkové výši: <span class="underground">29 000 Kč</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <section class="footer_collaboration">
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col1.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col2.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col3.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col4.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col5.png">
+        </a>
+    </section>
+
+    <section class="footer_info">
+        <p class="main_content_description_motto" style="font-size: 40px"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+        <div class="custom_underline"></div>
+
+        <div class="footer_info_blocks">
+            <div class="footer_info_block">
+                <h1 class="main_content_title"><span class="title_red">49.</span> <span class="title_blue">mateřská škola</span> <br/> <span class="title_green underground">ČTYŘLÍSTEK</span></h1>
+                <img class="main_content_arrow" src="../assets/arrow1.png" alt="arrow">
+                <a class="main_button" href="#"><span class="main_button_text">Kontaktujte nás</span> <span class="main_button_arrow">></span></a>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_block_lists">
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Ochrana osobních údajů</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Povinně zveřejňované informace</a></li>
+                    </ul>
+
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Úvod</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">O školce</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Kontakty</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Informace</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Jídelníček</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Fotogalerie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plzen Logo -->
+    </section>
+</footer>
+
+
+<script src="../scripts/navigation.js"></script>
+
+</body>
+
+</html>

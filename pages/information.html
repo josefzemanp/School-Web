@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/information.css">
+    <link href="https://fonts.cdnfonts.com/css/indie-flower" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almarai" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header_logo">
+        <img alt="logo" class="header_logo_image" src="../assets/logo.png">
+        <h1 class="header_logo_title">49. MŠ <br/> Čtyřlístek</h1>
+    </div>
+    <nav class="header_nav">
+        <div class="header_nav_hamburger"  onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a>Uvod</a></li>
+            <li><div onclick="toggleDropdown()">Skolka <span class="header_nav_dropdown_arrow"></span></div>
+                <ul class="header_nav_dropdown">
+                    <li><a>O školce</a></li>
+                    <li><a>Kontakty</a></li>
+                    <li><a>Informace</a></li>
+                    <li onclick="toggleClassDropdown()">Třídy <span class="header_nav_dropdown_arrow"></span>
+                        <ul class="header_nav_dropdown_classes">
+                            <li><a>Veverky</a></li>
+                            <li><a>Krtečci</a></li>
+                            <li><a>Medvíďata</a></li>
+                            <li><a>Včelky</a></li>
+                        </ul>
+                    </li>
+                    <li><a>3D vizualizace</a></li>
+                </ul>
+
+            </li>
+            <li><a>Jidelnicek</a></li>
+            <li><a>Fotogalerie</a></li>
+        </ul>
+        <a class="header_button">Kontaktujte nas <span class="header_button_arrow">></span></a>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="information">
+        <div class="information_buttons">
+            <button class="information_button" onclick="showList(0)">Stravné</button>
+            <button class="information_button" onclick="showList(1)">Školné</button>
+        </div>
+
+        <div class="information_block active">
+            <h1 class="sec_title information_block_t"  style="--left-title: 450px; --color-title: var(--red-color);"><span class="title_red"><span class="underground">Placení</span> stravného</span></h1>
+            <ul class="list">
+                <li class="list_item">při nástupu do školky zaplatí všichni zálohu ve výši 1 500,- Kč (platba buď složenkou nebo bankovním převodem)</li>
+                <li class="list_item">povolení k inkasu, číslo účtu 24031311 / 0100, variabilní symbol neuvádějte, konstantní symbol 0308</li>
+                <li class="list_item">stravovací jednotka:  3-6 letí 50,-Kč</li>
+                <li class="list_item">stravovací jednotka: 7 letí 55,- Kč</li>
+                <li class="list_item">podrobnější informace podá ředitelka školy a vedoucí ŠJ na tel. 702 267 409</li>
+            </ul>
+
+        </div>
+
+        <div class="information_block">
+            <h1 class="sec_title information_block_t"  style="--left-title: 425px; --color-title: var(--orange-color);"><span class="title_orange"><span class="underground">Placení</span> školného</span></h1>
+            <ul class="list">
+                <li class="list_item">školné ve výši 830,- Kč - musí být zaplaceno do 15. dne v měsíci</li>
+                <li class="list_item">číslo účtu je 57634311 / 0100, jako variabilní symbol uvádějte mateřskou školou přidělené osobní číslo dítěte, konstantní symbol neuvádějte</li>
+                <li class="list_item">předškolní děti a děti s odkladem školní docházky školné neplatí</li>
+                <li class="list_item">podrobnější informace podá ředitelka školy a vedoucí ŠJ na tel. 702 267 409</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="needs">
+        <h1 class="sec_title needs_block" style="--left-title: 650px; --color-title: var(--brown-color);"><span class="title_brown">Co děti <span class="underground">potřebují do školky</span>?</span></h1>
+
+        <ul class="list">
+            <li class="list_item">bačkory bez zavazování - podepsané</li>
+            <li class="list_item">náhradní oblečení – triko, tepláky, spodní prádlo, ponožky</li>
+            <li class="list_item">pohodlné oblečení do třídy – triko, tepláky atd.</li>
+            <li class="list_item">vhodnou obuv a oblečení na pobyt venku</li>
+            <li class="list_item">pyžamo a lůžkoviny / povlečení včetně polštáře a deky + prostěradlo natahovací 136x54cm /Včelky - napínací prostěradlo, malý polštářek a deku</li>
+            <li class="list_item">ve vlastním zájmu vše podepsat</li>
+        </ul>
+
+    </section>
+
+    <section class="program">
+        <h1 class="sec_title program" style="--left-title: 700px; --color-title: var(--blue-color);"><span class="title_blue">Jaký mají děti <span class="underground">denní program</span>?</span></h1>
+
+        <div class="program_line">
+            <div class="program_content">
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">6:00 - 8:30</p>
+                    <h2 class="program_content_block_title">VOLNÉ HRY</h2>
+                    <p class="program_content_block_description">Děti mají možnost využít všech <span class="underground">hraček či zábavných aktivit</span>!</p>
+                </div>
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">8:20 - 9:00</p>
+                    <h2 class="program_content_block_title">PRŮBĚŽNÁ SVAČINKA</h2>
+                    <p class="program_content_block_description">Děti se postupně dostávají k <span class="underground">mlsné svačince</span>!</p>
+                </div>
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">9:00 - 10:00</p>
+                    <h2 class="program_content_block_title">ŘÍZENÁ ČINNOST</h2>
+                    <p class="program_content_block_description">Dětem je připraven <span class="underground">zábavný, naučný a kreativní program</span>!</p>
+                </div>
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">10:00 - 11:45</p>
+                    <h2 class="program_content_block_title">POBYT VENKU</h2>
+                    <p class="program_content_block_description">Děti využívají naši vybavenou <span class="underground">zahradu s houpačkami, pískovištěmi a jinými atrakcemi</span>!</p>
+                </div>
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">11:45 - 12:30</p>
+                    <h2 class="program_content_block_title">OBĚD, ZUBNÍ HYGIENA</h2>
+                    <p class="program_content_block_description">Nyní děti čeká <span class="underground">chutný oběd a poté zubní hygiena před odpočinkem</span>!</p>
+                </div>
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">12:30 - 14:00</p>
+                    <h2 class="program_content_block_title">ODPOČINEK A RELAXACE</h2>
+                    <p class="program_content_block_description">Po obědě <span class="underground">děti nabírají sílu</span> na odpolední hry a <span class="underground">relaxují</span>!</p>
+                </div>
+                <div class="program_content_block">
+                    <div class="program_content_block_circles"></div>
+                    <p class="program_content_block_time">14:00 - 16.30</p>
+                    <h2 class="program_content_block_title">VOLNÉ HRY A AKTIVITY</h2>
+                    <p class="program_content_block_description">Dle počasí se děti <span class="underground">vydají ven</span>, nebo si hrají <span class="underground">uvnitř s hračkami a čekají na své rodiče</span>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <section class="footer_collaboration">
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col1.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col2.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col3.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col4.png">
+        </a>
+
+        <a class="footer_collaboration_link" href="#">
+            <img alt="logo" class="footer_collaboration_logo" src="../assets/col5.png">
+        </a>
+    </section>
+
+    <section class="footer_info">
+        <p class="main_content_description_motto" style="font-size: 40px"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+        <div class="custom_underline"></div>
+
+        <div class="footer_info_blocks">
+            <div class="footer_info_block">
+                <h1 class="main_content_title"><span class="title_red">49.</span> <span class="title_blue">mateřská škola</span> <br/> <span class="title_green underground">ČTYŘLÍSTEK</span></h1>
+                <img class="main_content_arrow" src="../assets/arrow1.png" alt="arrow">
+                <a class="main_button" href="#"><span class="main_button_text">Kontaktujte nás</span> <span class="main_button_arrow">></span></a>
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_block_lists">
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Ochrana osobních údajů</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Povinně zveřejňované informace</a></li>
+                    </ul>
+
+                    <ul class="footer_info_block_list">
+                        <li class="footer_info_block_list_item"><a href="#">Úvod</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">O školce</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Kontakty</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Informace</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Jídelníček</a></li>
+                        <li class="footer_info_block_list_item"><a href="#">Fotogalerie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pilsen Logo -->
+    </section>
+
+</footer>
+
+<script src="../scripts/navigation.js"></script>
+<script src="../scripts/information.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.cdnfonts.com/css/indie-flower" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almarai" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_logo">
+            <img alt="logo" class="header_logo_image" src="./assets/logo.png">
+            <h1 class="header_logo_title">49. MŠ <br/> Čtyřlístek</h1>
+        </div>
+        <nav class="header_nav">
+            <div class="header_nav_hamburger"  onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a>Uvod</a></li>
+                <li><div onclick="toggleDropdown()">Skolka <span class="header_nav_dropdown_arrow"></span></div>
+                    <ul class="header_nav_dropdown">
+                        <li><a>O školce</a></li>
+                        <li><a>Kontakty</a></li>
+                        <li><a>Informace</a></li>
+                        <li onclick="toggleClassDropdown()">Třídy <span class="header_nav_dropdown_arrow"></span>
+                            <ul class="header_nav_dropdown_classes">
+                                <li><a>Veverky</a></li>
+                                <li><a>Krtečci</a></li>
+                                <li><a>Medvíďata</a></li>
+                                <li><a>Včelky</a></li>
+                            </ul>
+                        </li>
+                        <li><a>3D vizualizace</a></li>
+                    </ul>
+
+                </li>
+                <li><a>Jidelnicek</a></li>
+                <li><a>Fotogalerie</a></li>
+            </ul>
+            <a class="header_button">Kontaktujte nas <span class="header_button_arrow">></span></a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main_content">
+            <div class="main_content_left">
+                <h1 class="main_content_title"><span class="title_red">Jsme</span> <span class="title_blue">dětským</span> <span class="title_orange">snem!</span> <br/> <span class="title_green underground">ČTYŘLÍSTEK</span></h1>
+                <div class="main_content_description">
+                    <p class="main_content_description_text">Jsme místo, které dává dětem <span class="underground title_blue">radost</span>, <span class="underground title_green">bezpečí</span> a <span class="underground title_red">lásku</span>. Zaměřujeme se na <span class="underground">přípravu dětí na základní školu</span> a jejich nejlepší <span class="underground title_orange">vzdělávání</span>.</p>
+                    <p class="main_content_description_motto"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+                </div>
+                <img class="main_content_arrow" src="./assets/arrow1.png" alt="arrow">
+                <a class="main_button" href="#"><span class="main_button_text">Kontaktujte nás</span> <span class="main_button_arrow">></span></a>
+            </div>
+            <div class="main_content_right">
+                <img alt="photo" class="main_content_image" src="./assets/main_photo.png">
+            </div>
+        </section>
+
+        <section class="classes">
+            <div class="classes_block">
+                <img alt="photo" class="classes_block_image" src="./assets/classk.png">
+                <h2 class="classes_block_title">Krtecci</h2>
+            </div>
+            <div class="classes_block">
+                <img alt="photo" class="classes_block_image" src="./assets/classv.png">
+                <h2 class="classes_block_title">Veverky</h2>
+            </div>
+            <div class="classes_block">
+                <img alt="photo" class="classes_block_image" src="./assets/classm.png">
+                <h2 class="classes_block_title">Medvidata</h2>
+            </div>
+            <div class="classes_block">
+                <img alt="photo" class="classes_block_image" src="./assets/classvc.png">
+                <h2 class="classes_block_title">Vcelky</h2>
+            </div>
+        </section>
+
+        <section class="experiences">
+            <h1 class="sec_title" style="--left-title: 650px; --color-title: var(--red-color);"><span class="title_red">Co u nás <span class="underground">mohou děti zažít</span>?</span></h1>
+
+            <div class="experiences_blocks">
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Seznámení s Angličtinou</h3>
+                    <p class="experiences_blocks_block_description">hravou formou</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Plavecký výcvik</h3>
+                    <p class="experiences_blocks_block_description">"SPORTOVNÍ KLUB RADBUZA PLZEŇ"</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Zaměření na HV</h3>
+                    <p class="experiences_blocks_block_description">rytmizace, zpěv, hra na hudební nástroje</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Účast na sportovních soutěžích</h3>
+                    <p class="experiences_blocks_block_description">ve spolupráci se 17. ZŠ</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Besedy</h3>
+                    <p class="experiences_blocks_block_description">s městskou policií</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Divadelní představení v MŠ</h3>
+                    <p class="experiences_blocks_block_description">v průběhu celého roku</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Zahradní slavnosti s táborákem</h3>
+                    <p class="experiences_blocks_block_description">i pro členy rodiny</p>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Školní výlety</h3>
+                </div>
+                <div class="experiences_blocks_block">
+                    <h3 class="experiences_blocks_block_title">Tvořivé dílny s rodiči</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="positives">
+            <h1 class="sec_title positives"  style="--left-title: 650px; --color-title: var(--orange-color);"><span class="title_orange">Proč <span class="underground">děti milují</span> naší školku?</span></h1>
+
+            <div class="positives_blocks">
+                <div class="positives_blocks_block">
+                    <img alt="photo" class="positives_blocks_block_image" src="./assets/lovez.png">
+                    <h2 class="positives_blocks_block_title">Zabava</h2>
+                    <div class="custom_underline"></div>
+                    <p class="positives_blocks_block_description">Naše mateřská školka je místem, kde se děti můžou rozvíjet, učit a bavit se. Přijďte se k nám podívat, jak společně tvoříme zítřek Vašich malých školáčků!</p>
+                </div>
+                <div class="positives_blocks_block">
+                    <img alt="photo" class="positives_blocks_block_image" src="./assets/lovea.png">
+                    <h2 class="positives_blocks_block_title">Skvělá atmosféra</h2>
+                    <div class="custom_underline"></div>
+                    <p class="positives_blocks_block_description">Jsme ti, co rodí úsměvy dětí! Naše mateřská školka je naplněna pozitivní energií a láskou k dětem!</p>
+                </div>
+                <div class="positives_blocks_block">
+                    <img alt="photo" class="positives_blocks_block_image" src="./assets/lovep.png">
+                    <h2 class="positives_blocks_block_title">Pece</h2>
+                    <div class="custom_underline"></div>
+                    <p class="positives_blocks_block_description">Vaše dítě, naše radost! Mateřská školka je místem, kde se každé dítě cítí jako doma. S námi je v dobrých rukou!</p>
+                </div>
+                <div class="positives_blocks_block">
+                    <img alt="photo" class="positives_blocks_block_image" src="./assets/lovev.png">
+                    <h2 class="positives_blocks_block_title">Vybaveni</h2>
+                    <div class="custom_underline"></div>
+                    <p class="positives_blocks_block_description">Moderní a inspirující vybavení pro vaše malé objevitele! Naše školka je vybavena nejnovějšími prostředky pro vzdělávání a zábavu, aby se Vaše dítě cítilo pohodlně a mohlo se neustále učit a rozvíjet!</p>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <section class="footer_collaboration">
+            <a class="footer_collaboration_link" href="#">
+                <img alt="logo" class="footer_collaboration_logo" src="./assets/col1.png">
+            </a>
+
+            <a class="footer_collaboration_link" href="#">
+                <img alt="logo" class="footer_collaboration_logo" src="./assets/col2.png">
+            </a>
+
+            <a class="footer_collaboration_link" href="#">
+                <img alt="logo" class="footer_collaboration_logo" src="./assets/col3.png">
+            </a>
+
+            <a class="footer_collaboration_link" href="#">
+                <img alt="logo" class="footer_collaboration_logo" src="./assets/col4.png">
+            </a>
+
+            <a class="footer_collaboration_link" href="#">
+                <img alt="logo" class="footer_collaboration_logo" src="./assets/col5.png">
+            </a>
+        </section>
+
+        <section class="footer_info">
+            <p class="main_content_description_motto" style="font-size: 40px"><span class="title_red">“Poznávej,</span> <span class="title_blue">ochraňuj</span> <span class="title_orange">a měj</span> <span class="title_green">rád!”</span></p>
+            <div class="custom_underline"></div>
+
+            <div class="footer_info_blocks">
+                <div class="footer_info_block">
+                    <h1 class="main_content_title"><span class="title_red">49.</span> <span class="title_blue">mateřská škola</span> <br/> <span class="title_green underground">ČTYŘLÍSTEK</span></h1>
+                    <img class="main_content_arrow" src="./assets/arrow1.png" alt="arrow">
+                    <a class="main_button" href="#"><span class="main_button_text">Kontaktujte nás</span> <span class="main_button_arrow">></span></a>
+                </div>
+                <div class="footer_info_block">
+                    <div class="footer_info_block_lists">
+                        <ul class="footer_info_block_list">
+                            <li class="footer_info_block_list_item"><a href="#">Ochrana osobních údajů</a></li>
+                            <li class="footer_info_block_list_item"><a href="#">Povinně zveřejňované informace</a></li>
+                        </ul>
+
+                        <ul class="footer_info_block_list">
+                            <li class="footer_info_block_list_item"><a href="#">Úvod</a></li>
+                            <li class="footer_info_block_list_item"><a href="#">O školce</a></li>
+                            <li class="footer_info_block_list_item"><a href="#">Kontakty</a></li>
+                            <li class="footer_info_block_list_item"><a href="#">Informace</a></li>
+                            <li class="footer_info_block_list_item"><a href="#">Jídelníček</a></li>
+                            <li class="footer_info_block_list_item"><a href="#">Fotogalerie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plzen Logo -->
+        </section>
+    </footer>
+
+
+    <script src="./scripts/navigation.js"></script>
+</body>
+</html>

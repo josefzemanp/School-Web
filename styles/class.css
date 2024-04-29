@@ -1,0 +1,225 @@
+@import "./global.css";
+
+.main{
+
+}
+
+.class_content::after{
+        content: '';
+        position:absolute;
+        background: url('../assets/element.png');
+        width: 200px;
+        height: 500px;
+        top: 200px;
+        right: 0;
+        z-index: -1;
+}
+
+.class_title_block{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+.class_content .class_title_block::before{
+    content: '';
+    position: absolute;
+    background-image: url('../assets/flower3.png');
+    background-size: cover;
+    background-position: center;
+    width: 75.03px;
+    height: 61px;
+    right: -10px;
+    top: -60px;
+}
+
+.class_content .class_title_block::after{
+    content: '';
+    position: absolute;
+    background-image: url('../assets/flower2.png');
+    background-size: cover;
+    background-position: center;
+    width: 35.53px;
+    height: 39.73px;
+    right: -20px;
+    top: 5px;
+}
+
+.class_title_block .class_title_block_text{
+    font-family: var(--font-title);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.class_title_block .class_title_block_text .class_description{
+    color: var(--orange-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+.class_title_block .class_title_block_text .class_title{
+    color: var(--red-color);
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.class_title_block .class_title_block_image{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.class_teachers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class_teachers .class_teachers_teacher_block{
+    font-family: var(--font-title);
+    font-weight: 800;
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    background: #A6D337;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+}
+
+.class_motto{
+    font-family: var(--font-title);
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.class_target .class_target_description{
+    font-family: var(--font-basic);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+
+.class_requirements{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/classes_background3.png");
+    background-size: auto 100%;
+    background-position-y: center;
+    margin: 100px 0 100px 0;
+    padding: 0;
+    position: relative;
+    height: 400px;
+}
+
+.class_requirements::after{
+    content: '';
+    position: absolute;
+    background-image: url('../assets/classes_background4.png');
+    background-size: auto 100%;
+    background-position-y: center;
+    height: 550px;
+    top: calc(50% - 550px / 2);
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.class_requirements .class_requirements_block{
+    width: 215px;
+    height: 235px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-basic);
+    font-weight: 300;
+}
+
+.class_requirements .class_requirements_block .class_requirements_block_title{
+    font-size: 20px;
+}
+.class_requirements .class_requirements_block .class_requirements_block_value{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.class_requirements .class_requirements_block .class_requirements_block_other{
+    font-size: 20px;
+}
+
+.custom_underline {
+    width: 50px;
+    height: 3px;
+    background: var(--orange-color);
+}
+
+
+@media only screen and (max-width: 1384px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .class_content{
+        margin-top: 100px;
+        height: 500px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .class_teachers{
+        flex-wrap: wrap;
+    }
+
+    .class_content .class_title_block::after{
+        display: none;
+    }
+
+    .class_content .class_title_block::before{
+        display: none;
+    }
+
+    .class_title_block{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .class_requirements{
+        flex-wrap: wrap;
+        height: 600px;
+    }
+
+    .class_requirements::after{
+        height: 750px;
+        top: calc(50% - 750px / 2);
+    }
+
+    .class_requirements .class_requirements_block{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+
+}
